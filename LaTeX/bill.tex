@@ -1,0 +1,39 @@
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[fleqn]{amsmath}
+\usepackage{setspace}
+\usepackage{breqn}
+\usepackage[a4paper,
+bindingoffset=0in,
+left=0in,
+right=0in,
+top=0.1in,
+bottom=0.1in,
+footskip=.25in]{geometry}
+
+\begin{document}
+	
+\Large
+	
+\begin{equation}
+	Voter \, District = Bill_{Voter \, District} 
+\end{equation}
+
+
+\begin{equation} 
+	Fiduciary \, License = Bill_{Fiduciary \, License}
+\end{equation}
+
+\begin{equation}
+	Bill_{Public \, Policy \, Rate} = \displaystyle\sum_{Public \, Policy \in Bill_{Public \, Policies}} Public \, Policy_{Bill \, Commission} 	
+\end{equation}
+
+\begin{equation}
+	\begin{split}
+	Bill_{Total \, Tax \, Rate} = Bill_{Tax \, Rate} \times (1 & + Voter \, District_{Bill \, Commission} \\
+	& + Fiduciary \, License_{Bill \, Commission} \\
+	& + Bill_{Public \, Policy \, Rate})
+	\end{split}
+\end{equation}
+
+\end{document}

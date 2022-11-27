@@ -1,0 +1,47 @@
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[fleqn]{amsmath}
+\usepackage{setspace}
+\usepackage{breqn}
+\usepackage[a4paper,
+bindingoffset=0in,
+left=0in,
+right=0in,
+top=0.1in,
+bottom=0.1in,
+footskip=.25in]{geometry}
+
+\begin{document}
+	
+	\Large
+	\begin{equation}
+		Sovereign \, District = Token_{Voter \, District} 
+	\end{equation}
+
+	\begin{equation}
+		\begin{split}
+			Banking &\, License, \widehat{Banking \, License} \in Sovereign \, District_{Banking \, Licenses} \\
+			& \text{where:} \\
+			& Banking \, License_{Bank} \ne \widehat{Banking \, License}_{Bank}
+		\end{split}	
+	\end{equation}
+	
+	\begin{equation}
+		\begin{split}
+			Reserve &\, Obligations (Banking \, License, \widehat{Banking \, License}, Date) = \\
+			&\displaystyle\sum_{Balance \in Token_{Balances}} Balance_{Amount} \\
+			& \text{where:} \\
+			& Balance_{Source} = Banking \, License \land Balance_{Target} = \widehat{Banking \, License} \\
+			& \land Banking \, License_{Transfer \, Date} = \widehat{Banking \, License}_{Transfer \, Date} = Date
+		\end{split}	
+	\end{equation}
+
+	\begin{equation}
+		\begin{split}
+			Net (Banking \, &License, \widehat{Banking \, License}, Date) = \\
+			&Reserve \, Obligations (Banking \, License, \widehat{Banking \, License}, Date) \\
+			&-  Reserve \, Obligations (\widehat{Banking \, License}, Banking \, License, Date)
+		\end{split}	
+	\end{equation}
+	
+\end{document}

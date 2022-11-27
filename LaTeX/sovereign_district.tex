@@ -1,0 +1,67 @@
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[fleqn]{amsmath}
+\usepackage{setspace}
+\usepackage{breqn}
+\usepackage[a4paper,
+bindingoffset=0in,
+left=0in,
+right=0in,
+top=0.1in,
+bottom=0.1in,
+footskip=.25in]{geometry}
+
+\begin{document}
+	
+	\Large
+
+	\begin{equation} 
+		Monetary \, Policy = Sovereign \, District_{Monetary \, Policy}
+	\end{equation}
+	
+	\begin{equation}
+		\begin{split}
+			Sov&ereign \, District_{Government  \, Credit} = \\
+			&\displaystyle\sum_{Emission \, Bill \in Sovereign \, District_{Emission \, Bills}} 
+				Emission \, Bill_{Value} - Emission \, Bill_{Tax \, Payments} \\
+			& \text{where:} \\
+			& Emission \, Bill \in Sovereign \, District_{Active \, Proposals}
+		\end{split}
+	\end{equation}
+	
+	\begin{equation}
+		\begin{split}
+			Sov&ereign \, District_{Bank \, Credit} = \\
+			&\displaystyle\sum_{Banking \, License \in Sovereign \, District_{Banking \, Licenses}} 
+			\displaystyle\sum_{Loan \in Banking \, License_{Loans}} Loan_{Value} - Loan_{Loan \, Payments} \\
+			& \text{where:} \\
+			& Banking \, License \in Sovereign \, District_{Active \, Proposals}
+		\end{split}
+	\end{equation}
+	
+	\begin{equation}
+		\begin{split}
+		Sovereign \, District_{Token \, Supply} =& \; Sovereign \, District_{Government  \, Credit} \\
+		& + Sovereign \, District_{Bank \, Credit} \\
+		& + Monetary \, Policy_{Open \, Market \, Operations} \\
+		& + Monetary \, Policy_{Forex \, Operations}
+		\end{split}
+	\end{equation}
+
+	\begin{equation}
+	\begin{split}
+		Sov&ereign \, District_{Sovereign \, Debt} = \\
+		&\displaystyle\sum_{Emission \, Bill \in Sovereign \, District_{Bills}} Emission \, Bill_{Value} - Emission \, Bill_{Tax \, Payments} \\
+		& + \begin{aligned}[t] \displaystyle\sum_{Bill \in Sovereign \, District_{Bills}} 
+		\displaystyle\sum_{Loan, Bond \in Bill_{Public \, Obligation}} 
+			&Loan_{Value} - Loan_{Loan \, Payments} \\
+			&\lor Bond_{Nominal \, Value} - Bond_{Bond \, Payments} \\
+		\end{aligned}  \\
+		& + abs(Monetary \, Policy_{Open \, Market \, Operations}) \\
+		& \text{where:} \\
+		& Emission \, Bill \in Sovereign \, District_{Emission \, Bills} \land Bill \not\in Sovereign \, District_{Emission \, Bills} \\
+		& \land Bill, Emission \, Bill \in Sovereign \, District_{Active \, Proposals}
+	\end{split}
+	\end{equation}
+
+\end{document}

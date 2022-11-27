@@ -1,0 +1,50 @@
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[fleqn]{amsmath}
+\usepackage{setspace}
+\usepackage{breqn}
+\usepackage[a4paper,
+bindingoffset=0in,
+left=0in,
+right=0in,
+top=0.1in,
+bottom=0.1in,
+footskip=.25in]{geometry}
+
+\begin{document}
+	
+	\Large
+	
+	\begin{equation}
+		Voter_{Bill Rate} = \displaystyle\sum_{Bill \in Voter_{Active \, Bills}} Bill_{Total \, Tax \, Rate}
+	\end{equation}
+		
+	\begin{equation}
+		\begin{split}
+			Voter_{Fiduciary \, Rate} &= \displaystyle\sum_{
+				\substack{
+					Fiduciary \, License \in Voter_{Active \, Proposals} \\
+					Voting \, District \in Voter_{Voter \, Districts}}
+				} Fiduciary \, License_{Fiduciary \, Commission} \\
+			& \text{where:} \\
+			& Fiduciary \, License \in Voting \, District_{Fiduciary \, Licenses}
+		\end{split}	
+	\end{equation}
+	
+	\begin{equation}
+	\begin{split}
+	Voter_{Delegate \, Rate} = &\displaystyle\sum_{
+		\substack{
+			Vote \in Voter_{Votes} \\
+			Bill \in Voter_{Active \, Bills} \\
+			Delegation \in Voter_{Delegations}} 
+	} Bill_{Tax \, Rate} \times Delegation_{Bill \, Commission} \\
+	&\text{where:} \\
+	&Vote_{Voting \, Procedure[Voter \, Choice][Contract]} = Bill \land Vote_{Delegation} = Delegation
+	\end{split}
+	\end{equation}
+	
+	\begin{equation}
+		Voter_{Total \, Tax \, Rate} = Voter_{Bill Rate} + Voter_{Delegate \, Rate} + Voter_{Fiduciary \, Rate}
+	\end{equation}
+\end{document}
